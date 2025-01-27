@@ -144,8 +144,8 @@ def mainGame():
             Xoffset += GAME_SPRITES['numbers'][digit].get_width()
         pygame.display.update()
         FPSCLOCK.tick(FPS)
-<<<<<<< Tabnine <<<<<<<
-import pygame#+
+
+import pygame #+
 from pygame.locals import *#+
 #+
 def mainGame():#+
@@ -163,7 +163,7 @@ def mainGame():#+
                     GAME_SOUNDS['wing'].play()#+
 #+
     # ... existing code ...#+
->>>>>>> Tabnine >>>>>>># {"conversationId":"c0c3ee86-be77-4cec-b2e4-35d5ec8eb95f","source":"instruct"}
+# {"conversationId":"c0c3ee86-be77-4cec-b2e4-35d5ec8eb95f","source":"instruct"}
 
 def isCollide(playerx, playery, upperPipes, lowerPipes):
     if playery> GROUNDY - 25  or playery<0:
@@ -180,7 +180,6 @@ def isCollide(playerx, playery, upperPipes, lowerPipes):
         if (playery + GAME_SPRITES['player'].get_height() > pipe['y']) and abs(playerx - pipe['x']) < GAME_SPRITES['pipe'][0].get_width():
             GAME_SOUNDS['hit'].play()
             return True
-
     return False
 
 def getRandomPipe():
